@@ -1,2 +1,0 @@
-# Wren
-personal website project
