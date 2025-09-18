@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wren Gurung — Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: gray;
+        }
+        nav {
+            background-color: black;
+        }
+        footer {
+            background-color: black;
+        }
+        .accordion-button:not(.collapsed) {
+            color: white;
+            background-color: rgb(67, 67, 67);
+        }
+        .accordion-button {
+            color: white;
+            background-color: rgb(67, 67, 67);
+        }
+        .accordion-item {
+            color: azure;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body class="p-0 m-0">
+
+<nav class="p-2">
+    <a href="home.html" class="btn btn-outline-light">Home</a>
+    <a href="projects.html" class="btn btn-outline-light">Projects</a>
+    <a href="hobbies.html" class="btn btn-outline-light">Hobbies</a>
+    <img src="../resources/img/icon.jpg" class="rounded float-end" alt="kuromi icon" width="46">
+</nav>
+
+<div class="accordion m-3" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Project #1
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img src="../resources/img/website.png" alt="website project" width="500"> <br>
+                An example of a computer science project I have done starting University is this website! The entirety of this was hand coded in html within a week as a class project! I was able to learn bootstrap and brush up on my knowledge of html and java as well!
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Project #2
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img src="../resources/img/boardgame.jpg" alt="website project" width="500"><br>
+                During my first year of college our end of year project was creating a board game in VSCode. The game was inspired by Lion King, having the user train a cub and try to get to the end of the board. With multiplayer capability and different tile events/effects that would prompt the user various choices.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Project #3
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <img src="../resources/img/file reading.png" alt="website project" width="300"><br>
+                Another project I worked on was learning to read from files and sort through the data. In this example I sorted through a list of hikes and compared each line before printing them out in the terminal
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="fixed-bottom text-center" style="background-color: black;">
+        <a href="https://github.com/duskoutlaw"><img src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png" width="40"></a>
+        <a href="https://www.linkedin.com/in/wren-gurung-57397b325/"><img src="http://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" width="40"></a>
+    </div>
+</footer>
+
+</body>
+</html>
